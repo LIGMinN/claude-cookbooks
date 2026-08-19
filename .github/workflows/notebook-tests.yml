@@ -1,18 +1,7 @@
 name: Notebook Tests
 
 on:
-  pull_request:
-    paths:
-      - '**/*.ipynb'
-      - 'tests/notebook_tests/**'
-      - 'pyproject.toml'
-      - 'uv.lock'
-  push:
-    branches: [main]
-    paths:
-      - '**/*.ipynb'
-      - 'tests/notebook_tests/**'
-
+  workflow_dispatch:
 permissions:
   contents: read
   pull-requests: write

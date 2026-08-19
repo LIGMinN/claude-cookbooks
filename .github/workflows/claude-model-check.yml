@@ -1,19 +1,7 @@
 name: Claude Model Check
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-    paths:
-      - '**/*.ipynb'
-      - '**.py'
-      - '**.md'
   workflow_dispatch:
-    inputs:
-      pr_number:
-        description: 'PR number to review'
-        required: true
-        type: number
-
 permissions:
   contents: read
   pull-requests: write

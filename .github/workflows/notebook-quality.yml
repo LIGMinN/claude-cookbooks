@@ -1,16 +1,7 @@
 name: Notebook Quality Check
 
 on:
-  pull_request:
-    paths:
-      - '**/*.ipynb'
-      - 'pyproject.toml'
-      - 'uv.lock'
-  push:
-    branches: [main]
-    paths:
-      - '**/*.ipynb'
-
+  workflow_dispatch:
 permissions:
   contents: read
   pull-requests: write

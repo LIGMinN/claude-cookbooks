@@ -1,10 +1,7 @@
 name: Notebook Diff Comment
 
 on:
-  pull_request:
-    paths:
-      - '**/*.ipynb'
-
+  workflow_dispatch:
 permissions:
   contents: read
   pull-requests: write

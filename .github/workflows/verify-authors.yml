@@ -1,17 +1,7 @@
 name: Verify Authors
 
 on:
-  pull_request:
-    paths:
-      - 'authors.yaml'
-      - 'registry.yaml'
-  push:
-    branches:
-      - main
-    paths:
-      - 'authors.yaml'
-      - 'registry.yaml'
-
+  workflow_dispatch:
 jobs:
   verify-urls:
     runs-on: ubuntu-latest

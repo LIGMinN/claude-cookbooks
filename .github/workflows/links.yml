@@ -1,12 +1,7 @@
 name: Link Check
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-  schedule:
-    - cron: "0 0 * * SUN"
   workflow_dispatch:
-
 permissions:
   contents: read
   pull-requests: write
